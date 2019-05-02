@@ -47,8 +47,11 @@ class PokemonDetail extends React.Component {
                             <Card.Content>
                                 <Card.Header className='Capitalize'>{pokemon.name}</Card.Header>
                                 <Card.Meta>
-                                    <Label>{'Normal'}</Label>
-                                    <Label>{'Flying'}</Label>
+                                    {
+                                        pokemon.types.map((type) => {
+                                            return <Label key={type.type.name} className='Capitalize'>{type.type.name}</Label>
+                                        })
+                                    }
                                 </Card.Meta>
                                 {/* <Card.Description>Matthew is a musician living in Nashville.</Card.Description> */}
                             </Card.Content>
