@@ -36,7 +36,11 @@ export default function ThingList(props) {
             return pokeball;
         }
         const urlElements = wholeUrl.split('/').filter(String);
-        return require(`pokemon-sprites/sprites/${url}/${urlElements[urlElements.length - 1]}.png`);
+        try {
+            return require(`pokemon-sprites/sprites/${url}/${urlElements[urlElements.length - 1]}.png`);
+        } catch (error) {
+            return pokeball;
+        }
     };
 
     useEffect(() => {
