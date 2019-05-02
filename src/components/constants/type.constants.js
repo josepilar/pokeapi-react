@@ -1,0 +1,22 @@
+export const typeColors = {
+    normal: '',
+    fighitng: 'pink',
+    flying: 'grey',
+    poison: 'purple',
+    ground: 'brown',
+    rock: 'brown',
+    bug: 'teal',
+    ghost: 'black',
+    steel: 'grey',
+    fire: 'red',
+    water: 'blue',
+    grass: 'green',
+    electric: 'yellow',
+    psychic: 'violet',
+    ice: 'teal',
+    dragon: 'violet',
+    dark: 'black',
+    fairy: 'pink',
+    unknown: '',
+    shadow: 'grey'
+};
